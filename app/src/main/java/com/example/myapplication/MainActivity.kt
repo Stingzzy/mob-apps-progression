@@ -17,6 +17,8 @@ class MainActivity : AppCompatActivity() {
             insets
 
             //new changes for repo
+
+            //onboards
         }
     }
 }
