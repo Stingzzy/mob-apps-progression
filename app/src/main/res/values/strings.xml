@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="welcomeSign">Welcome back</string>
+    <string name="signIn">Sign in to access your account</string>
+    <string name="emailStatement">Enter your email</string>
+    <string name="passwordStatement">Password</string>
+    <string name="rememberMe">Remember Me</string>
+    <string name="forgotPassword">Forgot password?</string>
+    <string name="nextButton">Next</string>
+    <string name="registerLink">New member? Register Now</string>
+</resources>
