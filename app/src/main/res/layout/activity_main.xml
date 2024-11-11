@@ -11,6 +11,7 @@
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
         android:layout_marginBottom="420dp"
         android:adjustViewBounds="true"
         android:contentDescription="@string/login"
@@ -18,9 +19,7 @@
         android:src="@drawable/login"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="100dp"
-        />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/welcomeBack"
@@ -52,8 +51,8 @@
         />
 
     <com.google.android.material.textfield.TextInputLayout
-        style="@style/OnboardingTextInputLayout"
         android:id="@+id/EmailAddress"
+        style="@style/OnboardingTextInputLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
