@@ -1,23 +1,37 @@
 package com.example.myapplication
 
 import android.os.Bundle
-import android.widget.Button
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
+import com.google.android.material.button.MaterialButton
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
         setContentView(R.layout.activity_main)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
-        }
-        val nextButton = findViewById<Button>(R.id.nextButton)
+        val changeButton: MaterialButton = findViewById(R.id.swap_button)
+        var fragmentSwitch: Boolean = true;
 
+        supportFragmentManager.beginTransaction()
+            .add(R.id.fragment_container, FragmentA())
+            .commit()
+
+        changeButton.setOnClickListener {
+            if(fragmentSwitch) {
+                supportFragmentManager.beginTransaction()
+                    .replace(R.id.fragment_container, FragmentB())
+                    .addToBackStack(null)
+                    .commit()
+            }
+            else {
+                supportFragmentManager.beginTransaction()
+                    .replace(R.id.fragment_container, FragmentA())
+                    .addToBackStack(null)
+                    .commit()
+            }
+            fragmentSwitch = !fragmentSwitch
+        }
+    }
 }
-}
+
+
+
