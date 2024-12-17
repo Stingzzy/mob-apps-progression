@@ -21,15 +21,14 @@ class SignUp : AppCompatActivity() {
             insets
 
 
-        }
-    val registerNowLabel = findViewById<TextView>(R.id.loginRedirect)
-        registerNowLabel.setOnClickListener{
+        }   
+        val registerNowLabel = findViewById<TextView>(R.id.loginRedirect)
+        registerNowLabel.setOnClickListener {
             Log.d("tag", "Register now clicked")
 
-            val goToRegisterIntent = Intent(this,MainActivity::class.java )
+            val goToRegisterIntent = Intent(this, LogInActivity::class.java)
             startActivity(goToRegisterIntent)
         }
-
 
 
     }
