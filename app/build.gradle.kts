@@ -43,6 +43,12 @@ dependencies {
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
     testImplementation(libs.junit)
+    testImplementation("org.junit.jupiter:junit-jupiter:5.10.0")
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+
+}
+
+tasks.withType<Test> {
+    useJUnitPlatform()
 }
