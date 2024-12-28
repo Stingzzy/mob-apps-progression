@@ -7,6 +7,17 @@
     <string name="rememberMe">Remember me</string>
     <string name="forgotPassword">Forgot password?</string>
     <string name="nextButton">Next</string>
-    <string name="registerLink">New member? Register Now</string>
+    <string name="registerLink">New member? </string>
+    <string name="register">Register Now</string>
     <string name="login">login ></string>
+    <string name="page_name">Signup</string>
+    <string name="getStarted">Get Started</string>
+    <string name="freeAccount">by creating a free account</string>
+    <string name="fullName">Full Name</string>
+    <string name="email">Valid Email</string>
+    <string name="phone">Phone Number</string>
+    <string name="password">Strong Password</string>
+    <string name="tnC">By checking the box you agree to our Term and Conditions</string>
+    <string name="member">Already a member?</string>
+    <string name="loginRedirect">Log in</string>
 </resources>

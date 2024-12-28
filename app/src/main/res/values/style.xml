@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="OnboardingTextInputLayout" parent="Widget.Material3.TextInputEditText.FilledBox">
+        <item name="endIconMode">custom</item>
+        <item name="boxBackgroundColor">@color/material_dynamic_neutral100</item>
+        <item name="boxCornerRadiusBottomEnd">10dp</item>
+        <item name="boxCornerRadiusBottomStart">10dp</item>
+        <item name="boxCornerRadiusTopEnd">10dp</item>
+        <item name="boxCornerRadiusTopStart">10dp</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">10dp</item>
+    </style>
+
+
+</resources>

@@ -24,7 +24,13 @@
         </activity>
 
         <activity
-            android:name=".MainActivity"
+            android:name=".FragmentSample"
+            android:exported="true" />
+        <activity
+            android:name=".SignUp"
+            android:exported="false" />
+        <activity
+            android:name=".LogInActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
